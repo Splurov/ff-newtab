@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>New Tab</title>
+
+    <style>
+
+        html, body {
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            padding-top: 10%;
+            width: calc(280px * 3 + 30px * 2 + 2px * 3);
+        }
+
+        .item {
+            width: 280px;
+            height: 150px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+            .item:nth-of-type(3n+3) {
+                margin-right: 0;
+            }
+
+            .item_leprosorium {
+                background-color: #fcf8ef;
+                background-image: url(i/leprosorium.png);
+                background-repeat: no-repeat;
+                background-position: calc(50% - 4px) calc(50% - 3px);
+            }
+
+            .item_vk {
+                background-color: #4d75a3;
+                background-image: url(i/vk.png);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 180px 47px;
+            }
+
+            .item_facebook {
+                background-color: #3b579d;
+                background-image: url(i/facebook.png);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 64px 64px;
+            }
+
+            .item_yammer {
+                background-color: #fff;
+                background-image: url(i/yammer.png);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 180px 44px;
+            }
+
+            .item_myshows {
+                background-color: #f4f4f4;
+                background-image: url(i/myshows-logo.png), url(i/myshows-noise.png);
+                background-repeat: no-repeat, repeat;
+                background-position: 50% calc(50% - 5px), 0 0;
+                background-size: 180px 68px, 66px 92px;
+            }
+
+            .item_jira {
+                background-color: #def1fa;
+                background-image: url(i/jira.png);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 180px 71px;
+            }
+
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <a href="http://leprosorium.ru/my/" class="item item_leprosorium"></a><!--
+    --><a href="https://vk.com/" class="item item_vk"></a><!--
+    --><a href="https://facebook.com/" class="item item_facebook"></a><!--
+    --><a href="https://www.yammer.com/hh.ru/#/threads/company?type=general" class="item item_yammer"></a><!--
+    --><a href="http://myshows.ru/profile/" class="item item_myshows"></a><!--
+    --><a href="https://jira.hh.ru/secure/RapidBoard.jspa" class="item item_jira"></a>
+
+</div>
+
+</body>
+</html>
